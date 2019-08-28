@@ -1,3 +1,35 @@
+@font-face {
+  font-family: 'Cabin';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Cabin Italic'), local('Cabin-Italic'), url(https://fonts.gstatic.com/s/cabin/v14/u-4_0qWljRw-Pd81z_9Cmw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Cabin'), local('Cabin-Regular'), url(https://fonts.gstatic.com/s/cabin/v14/u-4x0qWljRw-Pd8w__g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Cabin Bold'), local('Cabin-Bold'), url(https://fonts.gstatic.com/s/cabin/v14/u-480qWljRw-PdeL2uhluyw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v22/neILzCirqoswsqX9zoKmNg.ttf) format('truetype');
+}
+span {
+  font-family: 'Lobster', cursive;
+  font-family: 'Cabin', sans-serif;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -86,7 +118,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -133,4 +165,60 @@ table {
 html,
 body {
   height: 100%;
+}
+.container {
+  width: 880px;
+  margin: 10px auto;
+}
+.container nav {
+  margin: 10px 0 10px 65%;
+  display: flex;
+  align-content: flex-end;
+  justify-content: space-between;
+}
+.container nav a {
+  text-decoration: none;
+  color: cadetblue;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 600;
+}
+.container .about {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 275px;
+  margin: 20px auto;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  align-content: space-between;
+  background: lightcyan;
+}
+.container .about h1 {
+  color: darkcyan;
+  font-family: 'Lobster', cursive;
+  font-size: 4rem;
+  width: 45%;
+  text-align: center;
+  padding-left: 20px;
+}
+.container .about .skills {
+  text-decoration: none;
+  font-family: 'Cabin', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  width: 30%;
+  padding-left: 40px;
+  color: darkblue;
+}
+.container .about .intro {
+  font-family: 'Cabin', sans-serif;
+  width: 90%;
+}
+.container .about .intro .intro-title {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+.container .about .intro .intro-para {
+  font-size: 1.1rem;
+  text-align: justify;
 }
