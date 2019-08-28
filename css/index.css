@@ -201,7 +201,7 @@ body {
   text-align: center;
   padding-left: 20px;
 }
-.container .about .skills {
+.container .about .ideas {
   text-decoration: none;
   font-family: 'Cabin', sans-serif;
   font-size: 1.3rem;
@@ -221,4 +221,28 @@ body {
 .container .about .intro .intro-para {
   font-size: 1.1rem;
   text-align: justify;
+}
+.container .skills {
+  margin: 25px auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  border-top: 1px solid blue;
+  border-bottom: 1px solid blue;
+}
+.container .skills article {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 260px;
+  margin: 20px 40px;
+  font-family: 'Cabin', sans-serif;
+}
+.container .skills article h3 {
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 1.3rem;
 }
